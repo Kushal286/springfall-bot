@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: springfall-bot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
